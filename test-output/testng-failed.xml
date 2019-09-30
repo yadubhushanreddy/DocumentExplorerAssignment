@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <parameter name="browsername" value="chrome"/>
+  <test name="Test">
+    <parameter name="browsername" value="chrome"/>
+    <classes>
+      <class name="documentexplorer.OmniusAssignment.LoginTest"/>
+      <class name="documentexplorer.OmniusAssignment.CollectionsTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Failed suite [Suite] -->

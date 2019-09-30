@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+  <test name="Test">
+  <parameter name="browsername" value="chrome" />
+    <classes>
+      <class name="documentexplorer.OmniusAssignment.LoginTest"/>
+      <class name="documentexplorer.OmniusAssignment.CollectionsTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

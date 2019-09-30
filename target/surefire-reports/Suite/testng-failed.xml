@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Suite]">
+  <parameter name="browsername" value="chrome"/>
+  <test name="Test">
+    <parameter name="browsername" value="chrome"/>
+    <classes>
+      <class name="documentexplorer.OmniusAssignment.LoginTest"/>
+      <class name="documentexplorer.OmniusAssignment.CollectionsTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <parameter name="browsername" value="chrome"/>
+    <classes>
+      <class name="documentexplorer.OmniusAssignment.CollectionsTest">
+        <methods>
+          <include name="checkCollectionCreationWithDuplicateName"/>
+          <include name="checkCollectionSearchFunctionality"/>
+        </methods>
+      </class> <!-- documentexplorer.OmniusAssignment.CollectionsTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

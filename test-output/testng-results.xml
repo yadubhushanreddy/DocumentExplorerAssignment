@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="9" passed="9">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="156920" started-at="2019-09-30T08:03:43Z" finished-at="2019-09-30T08:06:20Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="156920" started-at="2019-09-30T08:03:43Z" finished-at="2019-09-30T08:06:20Z">
+      <class name="documentexplorer.OmniusAssignment.CollectionsTest">
+        <test-method status="PASS" signature="checkIfUserAbleToCreateCollection()[pri:3, instance:documentexplorer.OmniusAssignment.CollectionsTest@6f96c77]" name="checkIfUserAbleToCreateCollection" duration-ms="11203" started-at="2019-09-30T13:34:09Z" finished-at="2019-09-30T13:34:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkIfUserAbleToCreateCollection -->
+        <test-method status="PASS" signature="checkCollectionSearchFunctionality()[pri:4, instance:documentexplorer.OmniusAssignment.CollectionsTest@6f96c77]" name="checkCollectionSearchFunctionality" duration-ms="10737" started-at="2019-09-30T13:34:21Z" finished-at="2019-09-30T13:34:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCollectionSearchFunctionality -->
+        <test-method status="PASS" signature="checkCollectionCreationWithDuplicateName()[pri:5, instance:documentexplorer.OmniusAssignment.CollectionsTest@6f96c77]" name="checkCollectionCreationWithDuplicateName" duration-ms="6157" started-at="2019-09-30T13:34:31Z" finished-at="2019-09-30T13:34:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCollectionCreationWithDuplicateName -->
+        <test-method status="PASS" signature="checkSortingOnNameColumn()[pri:6, instance:documentexplorer.OmniusAssignment.CollectionsTest@6f96c77]" name="checkSortingOnNameColumn" duration-ms="21118" started-at="2019-09-30T13:34:38Z" finished-at="2019-09-30T13:34:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSortingOnNameColumn -->
+        <test-method status="PASS" signature="validateTotalResultsDisplayed()[pri:7, instance:documentexplorer.OmniusAssignment.CollectionsTest@6f96c77]" name="validateTotalResultsDisplayed" duration-ms="5424" started-at="2019-09-30T13:34:59Z" finished-at="2019-09-30T13:35:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTotalResultsDisplayed -->
+        <test-method status="PASS" signature="validateIfDocumentsSectionDisplayed()[pri:8, instance:documentexplorer.OmniusAssignment.CollectionsTest@6f96c77]" name="validateIfDocumentsSectionDisplayed" duration-ms="75902" started-at="2019-09-30T13:35:04Z" finished-at="2019-09-30T13:36:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateIfDocumentsSectionDisplayed -->
+      </class> <!-- documentexplorer.OmniusAssignment.CollectionsTest -->
+      <class name="documentexplorer.OmniusAssignment.LoginTest">
+        <test-method status="PASS" signature="verifyLoginWithInvalidCredentials()[pri:0, instance:documentexplorer.OmniusAssignment.LoginTest@49b0b76]" name="verifyLoginWithInvalidCredentials" duration-ms="10203" started-at="2019-09-30T13:33:51Z" finished-at="2019-09-30T13:34:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithInvalidCredentials -->
+        <test-method status="PASS" signature="verifyLoginWithEmptyCredentials()[pri:1, instance:documentexplorer.OmniusAssignment.LoginTest@49b0b76]" name="verifyLoginWithEmptyCredentials" duration-ms="1371" started-at="2019-09-30T13:34:02Z" finished-at="2019-09-30T13:34:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithEmptyCredentials -->
+        <test-method status="PASS" signature="verifyLoginWithValidCredentials()[pri:2, instance:documentexplorer.OmniusAssignment.LoginTest@49b0b76]" name="verifyLoginWithValidCredentials" duration-ms="5911" started-at="2019-09-30T13:34:03Z" finished-at="2019-09-30T13:34:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithValidCredentials -->
+      </class> <!-- documentexplorer.OmniusAssignment.LoginTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
