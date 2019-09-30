@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="32.781" tests="6" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="75.55" tests="9" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib"/>
     <property name="java.vm.version" value="25.191-b12"/>
     <property name="gopherProxySet" value="false"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="/Users/bhushana/eclipse-workspace/OmniusAssignment"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/bhushana/DocumentExplorerAssignment"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/Users/bhushana/eclipse-workspace/OmniusAssignment"/>
+    <property name="user.dir" value="/Users/bhushana/DocumentExplorerAssignment"/>
     <property name="java.runtime.version" value="1.8.0_191-b12"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/endorsed"/>
@@ -25,7 +25,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Mac OS X"/>
-    <property name="classworlds.conf" value="/Users/bhushana/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf4603947690875213647.tmp"/>
+    <property name="classworlds.conf" value="/Users/bhushana/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf4498821718054766270.tmp"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/bhushana/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -52,7 +52,7 @@
     <property name="java.ext.dirs" value="/Users/bhushana/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
     <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/classes"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="/Users/bhushana/eclipse-workspace/OmniusAssignment/EMBEDDED"/>
+    <property name="maven.home" value="/Users/bhushana/DocumentExplorerAssignment/EMBEDDED"/>
     <property name="file.separator" value="/"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -61,10 +61,13 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="verifyLoginWithInvalidCredentials" classname="documentexplorer.OmniusAssignment.LoginTest" time="5.014"/>
-  <testcase name="verifyLoginWithEmptyCredentials" classname="documentexplorer.OmniusAssignment.LoginTest" time="1.248"/>
-  <testcase name="verifyLoginWithValidCredentials" classname="documentexplorer.OmniusAssignment.LoginTest" time="3.912"/>
-  <testcase name="checkIfUserAbleToCreateCollection" classname="documentexplorer.OmniusAssignment.CollectionsTest" time="11.015"/>
-  <testcase name="checkCollectionSearchFunctionality" classname="documentexplorer.OmniusAssignment.CollectionsTest" time="10.586"/>
-  <testcase name="checkCollectionCreationWithDuplicateName" classname="documentexplorer.OmniusAssignment.CollectionsTest" time="1.006"/>
+  <testcase name="verifyLoginWithInvalidCredentials" classname="documentexplorer.OmniusAssignment.LoginTest" time="7.744"/>
+  <testcase name="verifyLoginWithEmptyCredentials" classname="documentexplorer.OmniusAssignment.LoginTest" time="1.244"/>
+  <testcase name="verifyLoginWithValidCredentials" classname="documentexplorer.OmniusAssignment.LoginTest" time="5.617"/>
+  <testcase name="checkIfUserAbleToCreateCollection" classname="documentexplorer.OmniusAssignment.CollectionsTest" time="11.197"/>
+  <testcase name="checkCollectionSearchFunctionality" classname="documentexplorer.OmniusAssignment.CollectionsTest" time="10.81"/>
+  <testcase name="checkCollectionCreationWithDuplicateName" classname="documentexplorer.OmniusAssignment.CollectionsTest" time="6.163"/>
+  <testcase name="checkSortingOnNameColumn" classname="documentexplorer.OmniusAssignment.CollectionsTest" time="21.17"/>
+  <testcase name="validateTotalResultsDisplayed" classname="documentexplorer.OmniusAssignment.CollectionsTest" time="5.41"/>
+  <testcase name="validateIfDocumentsSectionDisplayed" classname="documentexplorer.OmniusAssignment.CollectionsTest" time="6.195"/>
 </testsuite>

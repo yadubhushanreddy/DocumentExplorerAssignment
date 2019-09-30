@@ -1,7 +1,7 @@
-/Users/bhushana/eclipse-workspace/OmniusAssignment/src/main/java/com/omnius/documentexplorer/utilities/DriverManager.java
-/Users/bhushana/eclipse-workspace/OmniusAssignment/src/main/java/com/omnius/documentexplorer/utilities/ExtentReportsConfig.java
-/Users/bhushana/eclipse-workspace/OmniusAssignment/src/main/java/com/omnius/documentexplorer/utilities/DriverFactory.java
-/Users/bhushana/eclipse-workspace/OmniusAssignment/src/main/java/com/omnius/documentexplorer/utilities/TestListener.java
-/Users/bhushana/eclipse-workspace/OmniusAssignment/src/main/java/com/omnius/documentexplorer/pages/CollectionsPage.java
-/Users/bhushana/eclipse-workspace/OmniusAssignment/src/main/java/com/omnius/documentexplorer/pages/LoginPage.java
-/Users/bhushana/eclipse-workspace/OmniusAssignment/src/main/java/com/omnius/documentexplorer/utilities/BasePage.java
+/Users/bhushana/DocumentExplorerAssignment/src/main/java/com/omnius/documentexplorer/utilities/BasePage.java
+/Users/bhushana/DocumentExplorerAssignment/src/main/java/com/omnius/documentexplorer/utilities/TestListener.java
+/Users/bhushana/DocumentExplorerAssignment/src/main/java/com/omnius/documentexplorer/utilities/DriverManager.java
+/Users/bhushana/DocumentExplorerAssignment/src/main/java/com/omnius/documentexplorer/utilities/DriverFactory.java
+/Users/bhushana/DocumentExplorerAssignment/src/main/java/com/omnius/documentexplorer/pages/LoginPage.java
+/Users/bhushana/DocumentExplorerAssignment/src/main/java/com/omnius/documentexplorer/utilities/ExtentReportsConfig.java
+/Users/bhushana/DocumentExplorerAssignment/src/main/java/com/omnius/documentexplorer/pages/CollectionsPage.java

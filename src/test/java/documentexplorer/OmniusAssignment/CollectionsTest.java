@@ -17,25 +17,25 @@ public class CollectionsTest
 	public void checkIfUserAbleToCreateCollection() throws InterruptedException
 	{
 		collectionPage = new CollectionsPage();
-		Thread.sleep(5000);
+		collectionPage.waitForSeconds(5);
 		newCollectionName = collectionNameSubString + BasePage.randomPath();
 		collectionPage.createNewCollection(newCollectionName);
 		Assert.assertTrue(collectionPage.isDocumentExplorerDisplayed(), 
 				"Document Explorer was not displayed after creating collection");
-		Thread.sleep(5000);
+		collectionPage.waitForSeconds(5);
 	}
 	
 	@Test(priority=4)
 	public void checkCollectionSearchFunctionality() throws InterruptedException
 	{
 		collectionPage.enterSearchKeyword(newCollectionName);
-		Thread.sleep(5000);
+		collectionPage.waitForSeconds(5);
 		collectionPage.validateCollectionSearch(newCollectionName);
 		/*Assert.assertTrue(collectionPage.getResultsRowCountForCollectionSearch()==1, 
 				"Returned row count is more than 1");
 		Assert.assertTrue(collectionPage.getCollectionNameFromResults().equals(newCollectionName),
 				"Returned Collection name is not equal to that of created");*/
-		Thread.sleep(5000);
+		collectionPage.waitForSeconds(5);
 	}
 	
 	@Test(priority=5)
@@ -45,7 +45,7 @@ public class CollectionsTest
 		Assert.assertTrue(collectionPage.isErrorMsgDisplayedForDuplicateCollection(), 
 				"Error message was not displayed");
 		collectionPage.clickCancelbutton();
-		Thread.sleep(5000);
+		collectionPage.waitForSeconds(5);
 		
 	}
 	
@@ -54,9 +54,9 @@ public class CollectionsTest
 	{
 		collectionPage.enterSearchKeyword(collectionNameSubString);
 		collectionPage.selectResultsCountToBeDisplayed();
-		Thread.sleep(5000);
+		collectionPage.waitForSeconds(5);
 		collectionPage.checkIfNameColumnIsSorted();
-		Thread.sleep(5000);
+		collectionPage.waitForSeconds(5);
 		collectionPage.enterSearchKeyword("");
 	}
 	
@@ -71,7 +71,7 @@ public class CollectionsTest
 	public void validateIfDocumentsSectionDisplayed() throws InterruptedException
 	{
 		collectionPage.enterSearchKeyword(newCollectionName);
-		Thread.sleep(5000);
+		collectionPage.waitForSeconds(5);
 		collectionPage.clickOnFirstResult();
 		collectionPage.checkIfDocumentsSectionDisplayed();
 	}

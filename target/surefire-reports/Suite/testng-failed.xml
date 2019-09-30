@@ -9,15 +9,4 @@
       <class name="documentexplorer.OmniusAssignment.CollectionsTest"/>
     </classes>
   </test> <!-- Test -->
-  <test name="Test(failed)">
-    <parameter name="browsername" value="chrome"/>
-    <classes>
-      <class name="documentexplorer.OmniusAssignment.CollectionsTest">
-        <methods>
-          <include name="checkCollectionCreationWithDuplicateName"/>
-          <include name="checkCollectionSearchFunctionality"/>
-        </methods>
-      </class> <!-- documentexplorer.OmniusAssignment.CollectionsTest -->
-    </classes>
-  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
