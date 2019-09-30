@@ -1,12 +1,12 @@
 # DocumentExplorerAssignment
-Assignment to create a framework to automate Document Explorer application
+Assignment to create a framework to automate Document Explorer application.
 
-Framework used : Page Object Model, TestNG
-Browsers : Chrome (Extensible)
-Language Used : Java
-Build Management Tool : Maven
-Html Reporting Tool : Extent Reports
-Test cases Automated : 9 (Extensible)
+ Framework used : Page Object Model, TestNG.
+ Browsers : Chrome (Extensible).
+ Language Used : Java.
+ Build Management Tool : Maven.
+ Html Reporting Tool : Extent Reports.
+ Test cases Automated : 9 (Extensible).
 
 Reasons for Page Object:
 
