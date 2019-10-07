@@ -18,6 +18,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
@@ -66,6 +67,7 @@ public class BasePage
 		{
 			System.out.println(e.getMessage());
 			System.out.println("Navigating to "+url+" Failed");
+			Assert.fail("Navigating to "+url+" Failed");
 		}
 	}
 	
@@ -126,6 +128,9 @@ public class BasePage
 			writeToReport(TestListener.logger, "fail", 
 					"Sending "+ testData + " to " + elementDescription + " Failed");
 			System.out.println(e.getMessage());
+			Assert.fail("Sending " + testData +" to " + elementDescription +
+			           " Failed");
+			
 		}
 		
 	}
@@ -144,6 +149,7 @@ public class BasePage
 			System.out.println("Clicking " + elementDescription + " Failed");
 	        System.out.println(e.getMessage());
 	        writeToReport(TestListener.logger, "fail", "Clicking " + elementDescription + " Failed");
+	        Assert.fail("Clicking " + elementDescription + " Failed");
 		}
 	}
 	
@@ -182,6 +188,7 @@ public class BasePage
 			writeToReport(TestListener.logger, "fail", 
 					"Selecting "+valueToBeSelected+" from "+elementDescription+" Failed");
 			System.out.println(e.getMessage());
+			Assert.fail("Selecting "+valueToBeSelected+" from "+elementDescription+" Failed");
 		}
 	}
 	

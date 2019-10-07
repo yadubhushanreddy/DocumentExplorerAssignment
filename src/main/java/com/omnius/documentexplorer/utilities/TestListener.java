@@ -41,7 +41,7 @@ public class TestListener implements ITestListener,ISuiteListener
 	@Override
 	public void onTestSuccess(ITestResult result) 
 	{
-		extentReport.flush();
+		//extentReport.flush();
 	}
 
 	@Override
@@ -98,6 +98,7 @@ public class TestListener implements ITestListener,ISuiteListener
 	@Override
 	public void onFinish(ITestContext context) 
 	{
+		extentReport.flush();
 		DriverManager.closeDriver();
 	}
 
