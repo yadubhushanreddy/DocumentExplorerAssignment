@@ -12,6 +12,7 @@ import org.testng.ITestResult;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
 
 public class TestListener implements ITestListener,ISuiteListener
 {
@@ -47,9 +48,14 @@ public class TestListener implements ITestListener,ISuiteListener
 	@Override
 	public void onTestFailure(ITestResult result) 
 	{
-		try {
+		System.out.println(result.getThrowable().getMessage());
+		logger.log(Status.FAIL, result.getThrowable().getMessage());
+		try 
+		{
 			logger.addScreenCaptureFromPath(System.getProperty("user.dir")+"//Screenshots//"+result.getName()+".png");
-		} catch (IOException e1) {
+		} 
+		catch (IOException e1) 
+		{
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
@@ -67,7 +73,8 @@ public class TestListener implements ITestListener,ISuiteListener
 	@Override
 	public void onTestSkipped(ITestResult result) 
 	{
-		
+		logger = extentReport.createTest(result.getName());
+		logger.skip("Test case this case id dependent on was failed");
 	}
 
 	@Override

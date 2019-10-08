@@ -123,7 +123,7 @@ public class CollectionsPage extends BasePage
 	{
 		Assert.assertTrue(getResultsRowCountForCollectionSearch() == 1, 
 				"Returned row count is more than 1 which is not valid");
-		System.out.println("Result matching tne search criteria was displayed");
+		System.out.println("Result matching the search criteria was displayed");
 		getExtentTestLogger().log(Status.PASS, "Returned only searched result");
 		Assert.assertTrue(getCollectionNameFromResults().equals(newCollectionName), 
 				"Returned Collection name is not equal to that of created");

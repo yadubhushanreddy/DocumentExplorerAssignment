@@ -32,7 +32,7 @@ public class LoginTest
 			  "Invalid username or password was not displayed");
   }
   
-  @Test(priority=2)
+  @Test(priority=2,groups= {"validLogin"})
   public void verifyLoginWithValidCredentials()
   {
 	  loginPage.loginWithEmptyCredentials("testuser", "testuser");

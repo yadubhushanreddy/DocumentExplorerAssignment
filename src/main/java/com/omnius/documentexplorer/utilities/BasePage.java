@@ -81,9 +81,12 @@ public class BasePage
 			                          String elementDescription)
 	{
 		WebElement webElement = null;
-		try
+		WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), 5);
+		webElement = wait.until(ExpectedConditions.
+				          visibilityOf(elementToWaitFor));
+		/*try
 		{
-			WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), 60);
+			WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), 5);
 			webElement = wait.until(ExpectedConditions.
 					          visibilityOf(elementToWaitFor));
 		}
@@ -103,7 +106,7 @@ public class BasePage
 					+ elementDescription);
 			System.out.println(ee.getMessage());
 			ee.printStackTrace();
-		}
+		}*/
 		return webElement;
 	}
 	
@@ -125,8 +128,8 @@ public class BasePage
 		{
 			System.out.println("Sending " + testData +" to " + elementDescription +
 					           " Failed");
-			writeToReport(TestListener.logger, "fail", 
-					"Sending "+ testData + " to " + elementDescription + " Failed");
+			/*writeToReport(TestListener.logger, "fail", 
+					"Sending "+ testData + " to " + elementDescription + " Failed");*/
 			System.out.println(e.getMessage());
 			Assert.fail("Sending " + testData +" to " + elementDescription +
 			           " Failed");
@@ -147,8 +150,8 @@ public class BasePage
 		catch(Exception e)
 		{
 			System.out.println("Clicking " + elementDescription + " Failed");
-	        System.out.println(e.getMessage());
-	        writeToReport(TestListener.logger, "fail", "Clicking " + elementDescription + " Failed");
+	        //System.out.println(e.getMessage());
+	        //writeToReport(TestListener.logger, "fail", "Clicking " + elementDescription + " Failed");
 	        Assert.fail("Clicking " + elementDescription + " Failed");
 		}
 	}
@@ -167,7 +170,7 @@ public class BasePage
 		catch(Exception e)
 		{
 			System.out.println(elementDescription + " was not Displayed");
-			writeToReport(TestListener.logger, "fail", elementDescription + " was not Displayed");
+			//writeToReport(TestListener.logger, "fail", elementDescription + " was not Displayed");
 			System.out.println(e.getMessage());
 			return false;
 		}
@@ -185,8 +188,8 @@ public class BasePage
 		catch(Exception e)
 		{
 			System.out.println("Selecting "+valueToBeSelected+" from "+elementDescription+" Failed");
-			writeToReport(TestListener.logger, "fail", 
-					"Selecting "+valueToBeSelected+" from "+elementDescription+" Failed");
+			/*writeToReport(TestListener.logger, "fail", 
+					"Selecting "+valueToBeSelected+" from "+elementDescription+" Failed");*/
 			System.out.println(e.getMessage());
 			Assert.fail("Selecting "+valueToBeSelected+" from "+elementDescription+" Failed");
 		}

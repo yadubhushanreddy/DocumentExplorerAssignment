@@ -13,7 +13,7 @@ public class CollectionsTest
 	
 	CollectionsPage collectionPage;
 	
-	@Test(priority=3)
+	@Test(priority=3, dependsOnGroups= {"validLogin"})
 	public void checkIfUserAbleToCreateCollection() throws InterruptedException
 	{
 		collectionPage = new CollectionsPage();
@@ -25,7 +25,7 @@ public class CollectionsTest
 		collectionPage.waitForSeconds(5);
 	}
 	
-	@Test(priority=4)
+	@Test(priority=4, dependsOnGroups= {"validLogin"})
 	public void checkCollectionSearchFunctionality() throws InterruptedException
 	{
 		collectionPage.enterSearchKeyword(newCollectionName);
@@ -38,7 +38,7 @@ public class CollectionsTest
 		collectionPage.waitForSeconds(5);
 	}
 	
-	@Test(priority=5)
+	@Test(priority=5, dependsOnGroups= {"validLogin"})
 	public void checkCollectionCreationWithDuplicateName() throws InterruptedException
 	{
 		collectionPage.createNewCollection(newCollectionName);
@@ -49,7 +49,7 @@ public class CollectionsTest
 		
 	}
 	
-	@Test(priority=6)
+	@Test(priority=6, dependsOnGroups= {"validLogin"})
 	public void checkSortingOnNameColumn() throws InterruptedException
 	{
 		collectionPage.enterSearchKeyword(collectionNameSubString);
@@ -60,14 +60,14 @@ public class CollectionsTest
 		collectionPage.enterSearchKeyword("");
 	}
 	
-	@Test(priority=7)
+	@Test(priority=7, dependsOnGroups= {"validLogin"})
 	public void validateTotalResultsDisplayed() throws InterruptedException
 	{
 		collectionPage.enterSearchKeyword("");
 		collectionPage.validateTotalResultsCountUnderCollections();	
 	}
 	
-	@Test(priority=8)
+	@Test(priority=8, dependsOnGroups= {"validLogin"})
 	public void validateIfDocumentsSectionDisplayed() throws InterruptedException
 	{
 		collectionPage.enterSearchKeyword(newCollectionName);
